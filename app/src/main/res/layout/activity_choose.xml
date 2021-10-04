@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon"
+    tools:context=".ChooseActivity">
+
+    <ImageView
+        android:id="@+id/fieldChoose"
+        android:layout_width="316dp"
+        android:layout_height="44dp"
+        app:srcCompat="@drawable/fieldstat"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="241dp"
+        android:layout_height="28dp"
+        android:spinnerMode="dialog"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@+id/fieldChoose"
+        app:layout_constraintRight_toRightOf="@+id/fieldChoose"
+        app:layout_constraintTop_toTopOf="@+id/fieldChoose"
+        app:layout_constraintBottom_toBottomOf="@+id/fieldChoose" />
+
+    <TextView
+        android:id="@+id/textLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:visibility="gone"
+        android:text="Выберите город"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fieldChoose"
+        app:layout_constraintLeft_toLeftOf="@+id/fieldChoose"
+        app:layout_constraintRight_toRightOf="@+id/fieldChoose" />
+
+    <ImageView
+        android:id="@+id/goNext"
+        android:layout_width="112dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@+id/fieldChoose"
+        app:layout_constraintRight_toRightOf="@+id/fieldChoose"
+        app:layout_constraintTop_toTopOf="@+id/fieldChoose"
+        app:srcCompat="@drawable/go_next" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

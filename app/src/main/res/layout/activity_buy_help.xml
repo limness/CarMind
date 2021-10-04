@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon"
+    tools:context=".BuyHelpActivity">
+
+    <ImageView
+        android:id="@+id/burgerMenu"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/menu_burger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="112dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/burgerMenu"
+        app:srcCompat="@drawable/button_ovail" />
+
+    <EditText
+        android:id="@+id/searching"
+        android:layout_width="104dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="264dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Поиск"
+        android:textColor="#6c6c6c"
+        android:textColorHint="#6c6c6c"
+        tools:layout_editor_absoluteY="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/burgerMenu"/>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="35dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="344dp"
+        app:srcCompat="@drawable/search"
+        tools:layout_editor_absoluteY="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/burgerMenu"/>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Помощь с покупкой"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/telephoneField"
+        android:layout_width="268dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/fieldstat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/label" />
+
+    <EditText
+        android:id="@+id/fieldTelephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="Введите ваш телефон"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/telephoneField"
+        app:layout_constraintStart_toStartOf="@+id/telephoneField"
+        app:layout_constraintTop_toTopOf="@+id/telephoneField"
+        app:layout_constraintBottom_toBottomOf="@+id/telephoneField"/>
+
+    <ImageView
+        android:id="@+id/autoField"
+        android:layout_width="268dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/fieldstat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/telephoneField" />
+
+    <EditText
+        android:id="@+id/fieldAuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="Марка автомобиля"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/autoField"
+        app:layout_constraintStart_toStartOf="@+id/autoField"
+        app:layout_constraintTop_toTopOf="@+id/autoField"
+        app:layout_constraintBottom_toBottomOf="@+id/autoField"/>
+
+    <ImageView
+        android:id="@+id/moneyField"
+        android:layout_width="268dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/fieldstat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/autoField" />
+
+    <EditText
+        android:id="@+id/fieldMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="Бюджет (в рублях)"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/moneyField"
+        app:layout_constraintStart_toStartOf="@+id/moneyField"
+        app:layout_constraintTop_toTopOf="@+id/moneyField"
+        app:layout_constraintBottom_toBottomOf="@+id/moneyField"/>
+
+    <ImageView
+        android:id="@+id/accept"
+        android:layout_width="129dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/buttonstat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/moneyField" />
+
+    <TextView
+        android:id="@+id/okeyText"
+        android:layout_width="305dp"
+        android:layout_height="123dp"
+        android:text="Nope"
+        android:visibility="gone"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/panelSearch"
+        android:layout_width="337dp"
+        android:layout_height="778dp"
+        android:layout_marginRight="234dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/panel_menu" />
+
+    <ImageView
+        android:id="@+id/closePanel"
+        android:layout_width="39dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="31dp"
+        app:srcCompat="@drawable/close"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/panelSearch"
+        app:layout_constraintTop_toTopOf="@+id/panelSearch"/>
+
+    <ImageView
+        android:id="@+id/logoPanel"
+        android:layout_width="134dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/panelSearch"
+        app:layout_constraintTop_toTopOf="@+id/panelSearch"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/avaLoginPanel"
+        android:layout_width="45dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@drawable/ava_login"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@+id/panelSearch"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/loginPanel"
+        android:layout_width="80dp"
+        android:layout_height="29dp"
+        android:text="login"
+        android:textColor="#ff6d65"
+        android:textSize="20dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="80dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@+id/panelSearch"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="160dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="120dp"
+        android:text="Баланс: "
+        android:textColor="#ff6d65"
+        android:textSize="16dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/panelSearch" />
+
+    <ImageView
+        android:id="@+id/exitFromApp"
+        android:layout_width="98dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/exit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/telephone"
+        android:layout_width="35dp"
+        android:layout_height="27dp"
+        app:srcCompat="@drawable/telephone"
+        android:layout_marginLeft="180dp"
+        android:layout_marginBottom="25dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/idPanel"
+        android:layout_width="80dp"
+        android:layout_height="29dp"
+        android:text="ID: 0100"
+        android:textColor="#ff6d65"
+        android:textSize="16dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="80dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@+id/panelSearch"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/paydown"
+        android:layout_width="167dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="318dp"
+        android:text="3. Вывод баланса"
+        android:textColor="#f0c98c"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/panelSearch" />
+
+    <TextView
+        android:id="@+id/aboutService"
+        android:layout_width="120dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="190dp"
+        android:text="1. О сервисе"
+        android:textColor="#f0c98c"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/panelSearch" />
+
+    <TextView
+        android:id="@+id/becomePartner"
+        android:layout_width="199dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="252dp"
+        android:text="2. Стать партнером"
+        android:textColor="#f0c98c"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/panelSearch" />
+
+    <TextView
+        android:id="@+id/adminScore"
+        android:layout_width="181dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="446dp"
+        android:text="5. Вывод кешбека клиенту"
+        android:textColor="#f0c98c"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/panelSearch" />
+
+    <TextView
+        android:id="@+id/changeCity"
+        android:layout_width="181dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="384dp"
+        android:text="4. Изменить город"
+        android:textColor="#f0c98c"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/panelSearch" />
+
+</android.support.constraint.ConstraintLayout>

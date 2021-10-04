@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon"
+    tools:context=".SequrityActivity">
+
+    <TextView
+        android:id="@+id/nextLabel"
+        android:layout_width="285dp"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:text="Нажимая продолжить я согласен с политикой и пользовательским правилом сервиса"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/goNext"
+        android:layout_width="126dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/go_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nextLabel" />
+
+    <TextView
+        android:id="@+id/seqofservice"
+        android:layout_width="294dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_marginBottom="160dp"
+        android:text="Пользовательские правила сервиса"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/goPolicy"
+        android:layout_width="263dp"
+        android:layout_height="23dp"
+        android:gravity="center"
+        android:text="Политика Конфиденциальности"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seqofservice" />
+
+</android.support.constraint.ConstraintLayout>
